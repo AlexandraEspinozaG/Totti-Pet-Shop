@@ -58,6 +58,26 @@
     display: block;
     text-align: center;
 }
+
+.boton-menu{
+    margin-right: 30px;
+    font-size: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width:700px){
+    .logo{
+        font-size: 30px;
+        padding-left: 35px;
+    }
+    .enlaces li a{
+        font-size: 16px;    
+    }
+}
+
+
      
 /* Hero */
 

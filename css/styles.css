@@ -493,29 +493,6 @@
     padding-top: 30px;
     margin-bottom: 30px;
 }
-.card img{
-    width: 400px;
-    height: 300px;
-    background-position: center;
-    justify-content: center;
-    text-align: center;
-    display: center;
-    padding-bottom: 30px;
-}
-.card-body{
-    padding: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color:#ffffff;
-    border-color: #ffffff;
-}
-
-.card-text{
-    padding-bottom: 30px;
-}
 
 /*Pagina nosotros*/
 

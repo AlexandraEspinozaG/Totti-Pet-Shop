@@ -34,6 +34,7 @@
     height: 70px;
 }
 
+
 .logo{
     height: 70px;   
 }
@@ -88,10 +89,10 @@
 }
 
 .boton{
-    width: 125px;
+    width: 115px;
     display: block;
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 10px 10px;
     background: var(--colorbotones);
     color: #ffffff;
     text-decoration: none;
@@ -178,7 +179,7 @@
 }
 
 .productos p{
-    padding: 0 1rem;
+    padding-bottom: 10px;
     font-size: 16px;
     font-weight: 300;
 }
@@ -271,13 +272,23 @@
 }
 
 @media screen and (max-width:800px){
+    
     .menu-navegacion{
-        flex-direction: column;
-        height: 120px;
-        justify-content: space-evenly;
-        
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        transform: translateX(-100);
+        all: 0.3s;
     }
+    .enlaces{
+        display: block;
+        padding-left: 50px;
+    }
+
+  
 }
+
 /*pagina producto*/
 
 .hero-producto{
@@ -475,4 +486,67 @@
     font-size: 10px;
     font-weight: 500;
     margin-bottom: 10px;
+}
+
+/*Pagina nosotros*/
+
+.encabezado{
+    padding-top: 30px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 25px;
+    color: #777777;
+}
+
+.hero-nosotros{
+    height: 500px;
+    background-image: url("../imagenes/bannercachorros.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.contenedor-textos{
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#ffffff
+}
+
+.hero-nosotros h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-nosotros p{
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.contenedor-nosotros h2{
+    text-align: center;
+    padding-top: 30px;
+    color: #602F9C;
+    font-weight: 700;
+    font-size: 36px;
+}
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+.iconos{
+    padding-top: 70px;
+    flex-basis: calc(33,33% -1rem);
+    text-align: center;
+}
+.parrafo{
+    font-size: 16px;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    color: #777777;
 }

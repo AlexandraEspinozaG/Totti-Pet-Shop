@@ -32,6 +32,7 @@
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    overflow: hidden;
 }
 
 
@@ -53,6 +54,9 @@
     text-decoration: none;
     color:#777777;
     padding-left: 10px;
+    float: left;
+    display: block;
+    text-align: center;
 }
      
 /* Hero */
@@ -556,3 +560,6 @@
     padding-bottom: 30px;
     color: #777777;
 }
+
+
+    

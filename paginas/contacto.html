@@ -1,97 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/styles.css">
-        <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins?query=poppins">
-        <title>Contacto</title>
-    </head>
-    <body>
-        <header>
-            <nav class="menu-navegacion contenedor">
-                <div class="logo">
-                  <a href="../index.html"><img src="../imagenes/logotransptotti.png" alt=""></a>
-                </div>
-                <div class="enlaces">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../paginas/productos.html">Productos</a></li>
-                    <li><a href="../paginas/servicios.html">Servicios</a></li>
-                    <li><a href="../paginas/nosotros.html">Nosotros</a></li>
-                    <li><a href="../paginas/contacto.html">Contacto</a></li>
-                </div>
-            </nav>
-            <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125667.18119519441!2d-68.06426446911492!3d10.172574457995477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e80678bce61928f%3A0x9f78e9eea8c34272!2sValencia%2C%20Carabobo!5e0!3m2!1ses-419!2sve!4v1676902071755!5m2!1ses-419!2sve" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-        </header>
-        <main>
-            <div class="contact_form">
-                <div class="formulario">      
-                  <h1>Formulario de contacto</h1>
-                    <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
-                      <form action="submeter-formulario.php" method="post">       
-                            <p>
-                              <label for="nombre" class="colocar_nombre">Nombre
-                                <span class="obligatorio">*</span>
-                              </label>
-                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                            </p>
-                            <p>
-                              <label for="email" class="colocar_email">Email
-                                <span class="obligatorio">*</span>
-                              </label>
-                                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                            </p>
-                        
-                            <p>
-                              <label for="telefone" class="colocar_telefono">Teléfono
-                              </label>
-                                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                            </p>    
-                          
-                            <p>
-                              <label for="website" class="colocar_website">Sitio web
-                              </label>
-                                <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
-                            </p>    
-                          
-                            <p>
-                              <label for="asunto" class="colocar_asunto">Asunto
-                                <span class="obligatorio">*</span>
-                              </label>
-                                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                            </p>    
-                          
-                            <p>
-                              <label for="mensaje" class="colocar_mensaje">Mensaje
-                                <span class="obligatorio">*</span>
-                              </label>                     
-                                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                                            </p>                    
-                          
-                            <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-            
-                            <p class="aviso">
-                              <span class="obligatorio"> * </span>los campos son obligatorios.
-                            </p>          
-                        
-                      </form>
-                </div>  
-              </div>        
-        </main>
-        <footer>
-            <div class="contenedor-footer">
-                <a href="../paginas/contacto.html"><h5 class="titulo-footer">Contacto</h5></a>
-                <div class="redes-sociales">
-                  <a href="https://www.facebook.com/TottiPetS"><img src="../imagenes/iconofacebook.png" alt="Facebook"></a>
-                  <a href="https://www.instagram.com/tottipetshop/"><img src="../imagenes/iconoinstagram.png" alt="Instagram"></a>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins?query=poppins">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <title>Contacto | Totti Pet Shop</title>
+  <meta name="description" content="Contactános, nuestros vendedores estarán siempre disponibles para ayudarte y guiarte en tu compra o agendar un servicio">
+  <meta name="keywords" content="Perros, Gatos, Accesorios, Mascotas, Animales, Medicinas, Veterinario, Peluqueria, Alimento, Higiene">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+          <div class="logo">
+              <a href="../index.html"><img src="../imagenes/logotransptotti.png" alt=""></a>
+          </div>
+          <button class="navbar-toggler boton-contacto" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../paginas/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../paginas/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+              </li>
+          </ul>
+              <div class="redes-sociales-nav col align-self-end">
+                  <a href="https://www.facebook.com/TottiPetS"><img src="../imagenes/iconofacebook.png"
+                          alt="Facebook"></a>
+                  <a href="https://www.instagram.com/tottipetshop/"><img src="../imagenes/iconoinstagram.png"
+                          alt="Instagram"></a>
                   <a href="#"><img src="../imagenes/logotwitter.png" alt="Twitter"></a>
-                </div>  
-                <p class="copy-footer">Totti Pet Shop | © 2023 Todos los derechos reservados.</p>
-            </div>
-        </footer>
-    </body>
+              </div>
+          </div>
+      </div>
+  </nav>
+    <div class="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125667.18119519441!2d-68.06426446911492!3d10.172574457995477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e80678bce61928f%3A0x9f78e9eea8c34272!2sValencia%2C%20Carabobo!5e0!3m2!1ses-419!2sve!4v1676902071755!5m2!1ses-419!2sve"
+        width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </header>
+  <main>
+    <div class="contact_form">
+      <div class="formulario">
+        <h1>Formulario de contacto</h1>
+        <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+        <form action="submeter-formulario.php" method="post">
+          <p>
+            <label for="nombre" class="colocar_nombre">Nombre
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+              placeholder="Escribe tu nombre">
+          </p>
+          <p>
+            <label for="email" class="colocar_email">Email
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="email" name="introducir_email" id="email" required="obligatorio"
+              placeholder="Escribe tu Email">
+          </p>
+
+          <p>
+            <label for="telefone" class="colocar_telefono">Teléfono
+            </label>
+            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+          </p>
+
+          <p>
+            <label for="website" class="colocar_website">Sitio web
+            </label>
+            <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+          </p>
+
+          <p>
+            <label for="asunto" class="colocar_asunto">Asunto
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+              placeholder="Escribe un asunto">
+          </p>
+
+          <p>
+            <label for="mensaje" class="colocar_mensaje">Mensaje
+              <span class="obligatorio">*</span>
+            </label>
+            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+              placeholder="Deja aquí tu comentario..."></textarea>
+          </p>
+
+          <button class="boton-contacto" type="submit" name="enviar_formulario" id="enviar">
+            <p>Enviar</p>
+          </button>
+
+          <p class="aviso">
+            <span class="obligatorio"> * </span>los campos son obligatorios.
+          </p>
+
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="contenedor-footer">
+      <a href="../paginas/contacto.html">
+        <h5 class="titulo-footer">Contacto</h5>
+      </a>
+      <div class="redes-sociales">
+        <a href="https://www.facebook.com/TottiPetS"><img src="../imagenes/iconofacebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/tottipetshop/"><img src="../imagenes/iconoinstagram.png" alt="Instagram"></a>
+        <a href="#"><img src="../imagenes/logotwitter.png" alt="Twitter"></a>
+      </div>
+      <p class="copy-footer">Totti Pet Shop | © 2023 Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

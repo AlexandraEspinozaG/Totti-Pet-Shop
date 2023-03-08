@@ -25,7 +25,7 @@
 }
 
 /* Menu */
-
+/*
 .menu-navegacion{
     padding: 0 100px;
     display: flex;
@@ -34,10 +34,11 @@
     height: 70px;
     overflow: hidden;
 }
-
+*/
 
 .logo{
-    height: 70px;   
+    height: 70px;
+    padding-right: 30px;
 }
 
 .logo img{
@@ -70,20 +71,28 @@
 @media screen and (max-width:700px){
     .logo{
         font-size: 30px;
-        padding-left: 35px;
     }
     .enlaces li a{
         font-size: 16px;    
     }
 }
 
+.redes-sociales-nav {
+    display: flex;
+    justify-content: right;
+}
+
+.redes-sociales-nav img{
+    font-size: 30px;
+    padding: 5px;
+}
 
      
 /* Hero */
 
 .hero{
     height: 650px;
-    background-image: url("../imagenes/perrosgatosbanner.jpg");
+    background-image: url("../imagenes/perrosgatosbanner-min.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -134,7 +143,7 @@
     text-align: center;
     font-size: 40px;
     color: var(--colortitulos);
-    margin-top: 100px;
+    margin-top: 50px;
     font-weight: 100;
 
 }
@@ -143,7 +152,14 @@
     text-align: center;
     color:#777777;
     margin: 20px 0px;
+    font-size: 20px;
+    
 }
+.py-5{
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
 
 .productos{
     padding-top: var(--marginelementos);
@@ -159,10 +175,14 @@
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba (0, 0, 0, 0.2);
     overflow: hidden;
-    margin: 20px;
     text-align: center;
     flex-direction: column;
+    margin-right: 20px;
    
+}
+.producto1:hover{
+    transform: translateY(-15px);
+    box-shadow: 5px 20px 20px rgba(0,0,0,0.2);
 }
 
 .producto2{
@@ -170,8 +190,11 @@
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba (0, 0, 0, 0.2);
     overflow: hidden;
-    margin: 20px;
     text-align: center;
+}
+.producto2:hover{
+    transform: translateY(-15px);
+    box-shadow: 5px 20px 20px rgba(0,0,0,0.2);
 }
 
 .producto3{
@@ -179,8 +202,12 @@
    border-radius: 8px;
    box-shadow: 0 2px 2px rgba (0, 0, 0, 0.2);
    overflow: hidden;
-   margin: 20px;
+   margin-left: 20px;
    text-align: center;
+}
+.producto3:hover{
+    transform: translateY(-15px);
+    box-shadow: 5px 20px 20px rgba(0,0,0,0.2);
 }
 
 .producto1 img{
@@ -199,7 +226,8 @@
 }
 
 .productos h3{
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .productos p{
@@ -260,6 +288,7 @@
     color: white;
     cursor: pointer;
     outline: 0px;
+    margin-bottom: 10px;
 }
 .conten-sub form .btn-sub:hover{
     background: #f8aebf;
@@ -317,7 +346,7 @@
 
 .hero-producto{
     height: 400px;
-    background-image: url("../imagenes/accesoriosmascotas.jpg");
+    background-image: url("../imagenes/accesoriosmascotas-min.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -351,7 +380,7 @@
 
 .hero-contacto{
     height: 400px;
-    background-image: url("../imagenes/accesoriosmascotas.jpg");
+    background-image: url("../imagenes/accesoriosmascotas-min.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -405,7 +434,7 @@
   }
   
   
-  button{
+  .boton-contacto {
     height: 45px; 
     padding-left: 5px;
     padding-right: 5px;   
@@ -421,10 +450,10 @@
   }
   
   
-  button p{
+  .boton-contacto p{
     color: #fff; 
   }
-  
+  */
   
   span{
     color: #6ECED3; 
@@ -447,7 +476,6 @@
   
   h3{
     font-size: 16px; 
-    padding-bottom: 30px;
     color: #0e0e0e;   
   }
   
@@ -481,42 +509,42 @@
 
   /*pagina servicios*/
 
-  .hero-servicios{
-    height: 400px;
-    background-image: url("../imagenes/banner2.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    text-align: center;
-    margin: 0;
+#services {}
+#services .services-top {
+    padding: 70px 0 50px;
 }
-
-.contenedor-textos{
-    padding: 30px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color:#ffffff
+#services .services-list {
+    padding-top: 50px;
 }
-
-.hero-servicios h1{
-    font-size: 36px;
-    font-weight: 700;
+.services-list .service-block {
+    margin-bottom: 25px;
+}
+.services-list .service-block .ico {
+    font-size: 38px;
+    float: left;
+}
+.services-list .service-block .text-block {
+    margin-left: 58px;
+}
+.services-list .service-block .text-block .name {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.services-list .service-block .text-block .info {
+    font-size: 16px;
+    font-weight: 300;
     margin-bottom: 10px;
 }
-
-.hero-servicios p{
-    font-size: 10px;
-    font-weight: 500;
-    margin-bottom: 10px;
+.services-list .service-block .text-block .text {
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 300;
 }
-
-.title{
-    padding-top: 30px;
-    margin-bottom: 30px;
-}
+.highlight {
+    color: #6ECED3;
+    font-weight:bold;
+}                    
 
 /*Pagina nosotros*/
 
@@ -530,15 +558,21 @@
 
 .hero-nosotros{
     height: 500px;
-    background-image: url("../imagenes/bannercachorros.jpg");
+    background-image: url("../imagenes/bannercachorros-min.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
 }
+.contenedor-nosotros p{
+    font-size: 14px;
+    font-weight: 200;
+    margin: 10px;
+    text-align: center;
+}
 
 .contenedor-textos{
-    padding: 30px;
+    padding: 10px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -580,6 +614,3 @@
     padding-bottom: 30px;
     color: #777777;
 }
-
-
-    

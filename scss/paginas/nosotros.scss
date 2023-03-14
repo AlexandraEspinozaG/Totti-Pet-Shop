@@ -1,0 +1,79 @@
+
+$color_1: black;
+$color_2: #ffffff;
+$color_3: #602F9C;
+
+.encabezado {
+	padding-top: 30px;
+	font-weight: 700;
+	text-align: center;
+	font-size: 25px;
+	color: $color_1;
+}
+.hero-nosotros {
+	height: 500px;
+	background-image: url("../imagenes/bannercachorros-min.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+	h1 {
+		font-size: 36px;
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 10px;
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
+}
+.contenedor-nosotros {
+	p {
+		font-size: 14px;
+		font-weight: 200;
+		margin: 10px;
+		text-align: center;
+	}
+	h2 {
+		text-align: center;
+		padding-top: 30px;
+		color: $color_3;
+		font-weight: 700;
+		font-size: 36px;
+	}
+}
+.contenedor-textos {
+	padding: 10px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: $color_2;
+}
+.iconos-nosotros {
+	display: flex;
+	justify-content: space-between;
+}
+.iconos {
+	padding-top: 70px;
+	flex-basis: calc(33,33% -1rem);
+	text-align: center;
+}
+.parrafo {
+	font-size: 16px;
+	justify-content: space-between;
+	padding-bottom: 30px;
+	color: $color_1;
+}
+@media screen and (max-width:800px) {
+	.contenedor-nosotros {
+		flex-direction: column;
+	}
+	.iconos-nosotros {
+		flex-direction: column;
+		text-align: center;
+		margin: 10px;
+	}
+}

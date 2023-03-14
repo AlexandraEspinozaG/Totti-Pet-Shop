@@ -1,0 +1,40 @@
+$color_1: var(--colortitulos);
+$color_2: var(--colortextos);
+
+.contenedor-footer {
+	background: #f8aebf;
+	text-align: center;
+}
+.titulo-footer {
+	text-align: center;
+	font-size: 30px;
+	color: $color_1;
+	font-weight: 100;
+	padding-top: 30px;
+}
+.redes-sociales {
+	display: flex;
+	justify-content: center;
+	img {
+		font-size: 30px;
+		padding: 15px;
+	}
+}
+.copy-footer {
+	text-align: center;
+	color: $color_2;
+}
+@media screen and (max-width:800px) {
+	.menu-navegacion {
+		position: absolute;
+		top: 50px;
+		left: 0;
+		width: 100%;
+		transform: translateX(-100);
+		all: 0.3s;
+	}
+	.enlaces {
+		display: block;
+		padding-left: 50px;
+	}
+}

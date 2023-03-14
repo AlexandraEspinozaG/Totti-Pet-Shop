@@ -1,0 +1,104 @@
+
+$color_1: #777777;
+$color_2: #ffffff;
+$background-color_1: #6ECED3;
+
+
+/* Menú */
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	overflow: hidden;
+	padding: var(--paddingsecciones);
+}
+.logo {
+	height: 70px;
+	padding-right: 30px;
+	img {
+		display: block;
+		height: 100%;
+	}
+}
+.enlaces {
+	li {
+		list-style: none;
+		display: inline-block;
+	}
+	a {
+		text-decoration: none;
+		color: $color_1;
+		padding-left: 10px;
+		float: left;
+		display: block;
+		text-align: center;
+	}
+}
+.boton-menu {
+	margin-right: 30px;
+	font-size: 25px;
+	color: $color_2;
+	cursor: pointer;
+	display: none;
+}
+.redes-sociales-nav {
+	display: flex;
+	justify-content: right;
+	img {
+		font-size: 30px;
+		padding: 5px;
+	}
+}
+.hero {
+	height: 650px;
+	background-image: url("../imagenes/perrosgatosbanner-min.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+	h1 {
+		font-size: 36px;
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 20px;
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
+}
+.contenedor-textos {
+	padding: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: $color_2;
+}
+.boton {
+	width: 115px;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 10px;
+	background: var(--colorbotones);
+	color: $color_2;
+	text-decoration: none;
+	border-radius: 20px;
+	cursor: pointer;
+	&:hover {
+		background-color: $background-color_1;
+	}
+}
+@media screen and (max-width:700px) {
+	.logo {
+		font-size: 30px;
+	}
+	.enlaces {
+		li {
+			a {
+				font-size: 16px;
+			}
+		}
+	}
+}

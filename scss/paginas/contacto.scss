@@ -1,0 +1,118 @@
+
+$color_1: #fff;
+$color_2: #6ECED3;
+$color_3: #0e0e0e;
+$color_4: #602F9C;
+$color_5: #a8a8a8;
+$background-color_1: #fbfbfb;
+$background-color_2: #6ECED3;
+$border-color_1: #ab4493;
+$border-color_2: #6ECED3;
+
+.hero-contacto {
+	height: 400px;
+	background-image: url("../imagenes/accesoriosmascotas-min.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+}
+.contact_form {
+	width: 460px;
+	height: auto;
+	margin: 80px auto;
+	border-radius: 10px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	background-color: $background-color_1;
+	padding-left: 30px;
+}
+input {
+	background-color: $background-color_1;
+	width: 408px;
+	height: 40px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: $border-color_1;
+	margin-top: 10px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+textarea {
+	background-color: $background-color_1;
+	width: 405px;
+	height: 150px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: $border-color_1;
+	margin-top: 10px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+	padding-top: 15px;
+}
+label {
+	display: block;
+	float: center;
+}
+.boton-contacto {
+	height: 45px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	background-color: $background-color_2;
+	border-color: $border-color_2;
+	border-style: solid;
+	border-radius: 10px;
+	width: 420px;
+	cursor: pointer;
+	p {
+		color: $color_1;
+	}
+}
+*/ {
+	span {
+		color: $color_2;
+	}
+}
+.aviso {
+	font-size: 13px;
+	color: $color_3;
+}
+h1 {
+	font-size: 39px;
+	text-align: letf;
+	padding-bottom: 20px;
+	color: $color_4;
+}
+h3 {
+	font-size: 16px;
+	color: $color_3;
+}
+p {
+	font-size: 14px;
+	color: $color_3;
+}
+&::-webkit-input-placeholder {
+	color: $color_5;
+}
+&::-webkit-textarea-placeholder {
+	color: $color_5;
+}
+.formulario {
+	input {
+		&:focus {
+			outline: 0;
+			border: 1px solid #97d848;
+		}
+	}
+	textarea {
+		&:focus {
+			outline: 0;
+			border: 1px solid #97d848;
+		}
+	}
+}

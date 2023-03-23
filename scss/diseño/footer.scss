@@ -1,8 +1,10 @@
-$color_1: var(--colortitulos);
-$color_2: var(--colortextos);
+$colortitulos: #602F9C;
+$color_2: #777777;
+$color_1: #602F9C;
+$background-color_2: #f8aebf;
 
 .contenedor-footer {
-	background: #f8aebf;
+	background: $background-color_2;
 	text-align: center;
 }
 .titulo-footer {

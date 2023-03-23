@@ -1,11 +1,7 @@
 
-@import "../imagenes/";
-
 //general
 @import "./general/base.scss";
 @import "./general/tipografia.scss";
-
-
 
 //layout
 @import "./diseño/footer.scss";
@@ -17,3 +13,6 @@
 @import "./paginas/servicios.scss";
 @import "./paginas/nosotros.scss";
 @import "./paginas/contacto.scss";
+
+@import url(../imagenes/accesoriosmascotas-min.jpg);
+@import url(../imagenes/bannercachorros-min.jpg);

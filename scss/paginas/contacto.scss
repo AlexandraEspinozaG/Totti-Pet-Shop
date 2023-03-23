@@ -73,7 +73,7 @@ label {
 		color: $color_1;
 	}
 }
-*/ {
+* {
 	span {
 		color: $color_2;
 	}
@@ -96,10 +96,10 @@ p {
 	font-size: 14px;
 	color: $color_3;
 }
-&::-webkit-input-placeholder {
+.-webkit-input-placeholder {
 	color: $color_5;
 }
-&::-webkit-textarea-placeholder {
+.-webkit-textarea-placeholder {
 	color: $color_5;
 }
 .formulario {
@@ -116,3 +116,25 @@ p {
 		}
 	}
 }
+@media screen and (max-width:425px) {
+		input{
+			width: 310px;
+			display: flex;
+		}
+		textarea{
+			width: 310px;
+			display: flex;
+		}
+		label{
+			width: 310px;
+			display: flex;
+		}
+		.boton-contacto{
+			width: 310px;
+			display: flex;
+			p{
+			align-content: center;
+			}
+			
+		}
+	}

@@ -1,10 +1,16 @@
 
-$color_1: #777777;
+$colortitulos: #602F9C; 
+$color_1: #000000,;
 $color_2: #ffffff;
-$color_3: var(--colortitulos);
 $color_4: white;
-$color_5: var(--colortextos);
+$color_3: #ffffff;
+$color_5: #001600;
+$colortextos: #777777;
+$colorbotones: #602F9C;
 $background-color_1: #6ECED3;
+$background-color_2: #f8aebf;
+$marginelementos: 40px;
+$paddingsecciones: 50px 0;
 
 
 /* Header */
@@ -14,7 +20,7 @@ $background-color_1: #6ECED3;
 	max-width: 1200px;
 	margin: auto;
 	overflow: hidden;
-	padding: var(--paddingsecciones);
+	padding: $paddingsecciones;
 }
 .logo {
 	height: 70px;
@@ -67,11 +73,13 @@ $background-color_1: #6ECED3;
 		font-size: 36px;
 		font-weight: 700;
 		margin-bottom: 10px;
+		color: $colortitulos;
 	}
 	p {
 		font-size: 20px;
 		font-weight: 500;
 		margin-bottom: 10px;
+		color: $color_1;
 	}
 }
 .contenedor-textos {
@@ -88,7 +96,7 @@ $background-color_1: #6ECED3;
 	display: block;
 	margin: 0 auto;
 	padding: 10px 10px;
-	background: var(--colorbotones);
+	background: $colorbotones;
 	color: $color_2;
 	text-decoration: none;
 	border-radius: 20px;
@@ -103,7 +111,7 @@ $background-color_1: #6ECED3;
 .titulo-seccion {
 	text-align: center;
 	font-size: 40px;
-	color: $color_3;
+	color: $colortitulos;
 	margin-top: 50px;
 	font-weight: 100;
 }
@@ -118,7 +126,7 @@ $background-color_1: #6ECED3;
 	padding-bottom: 3rem !important;
 }
 .productos {
-	padding-top: var(--marginelementos);
+	padding-top: $marginelementos;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -194,7 +202,8 @@ $background-color_1: #6ECED3;
 .conten-sub {
 	width: 100%;
 	height: 100%;
-	background: rgba(0,22,0,0,7);
+	background: $color_2;
+	opacity: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -235,15 +244,15 @@ $background-color_1: #6ECED3;
 			outline: 0px;
 			margin-bottom: 10px;
 			&:hover {
-				background: #f8aebf;
+				background: $background-color_2;
 			}
 		}
-	}
+}
 }
 /*Footer*/
 
 .contenedor-footer {
-	background: #f8aebf;
+	background: $background-color_2;
 	text-align: center;
 }
 .titulo-footer {
@@ -263,7 +272,7 @@ $background-color_1: #6ECED3;
 }
 .copy-footer {
 	text-align: center;
-	color: $color_5;
+	color: $color_2;
 }
 @media screen and (max-width:700px) {
 	.logo {

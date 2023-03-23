@@ -202,20 +202,19 @@ $paddingsecciones: 50px 0;
 .conten-sub {
 	width: 100%;
 	height: 100%;
-	background: $color_2;
-	opacity: 0;
+	background: $background-color_1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	h4 {
-		color: $color_2;
+		color: $color_3;
 		font-size: 30px;
 		margin-bottom: 10px;
 		margin-top: 30px;
 	}
 	p {
-		color: $color_2;
+		color: $color_3;
 		font-size: 17px;
 		margin-bottom: 25px;
 		max-width: 500px;
@@ -238,8 +237,8 @@ $paddingsecciones: 50px 0;
 			border: none;
 			font-size: 16px;
 			border-radius: 0px 3px 3px 0px;
-			background: #602F9C;
-			color: $color_4;
+			background: $colorbotones;
+			color: $color_3;
 			cursor: pointer;
 			outline: 0px;
 			margin-bottom: 10px;
@@ -247,8 +246,8 @@ $paddingsecciones: 50px 0;
 				background: $background-color_2;
 			}
 		}
-}
-}
+	}
+
 /*Footer*/
 
 .contenedor-footer {
@@ -314,4 +313,5 @@ $paddingsecciones: 50px 0;
 		display: block;
 		padding-left: 50px;
 	}
+}
 }

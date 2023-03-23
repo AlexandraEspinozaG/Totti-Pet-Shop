@@ -153,7 +153,6 @@ $paddingsecciones: 50px 0;
 	overflow: hidden;
 	text-align: center;
 	flex-direction: column;
-	margin-right: 20px;
 	margin-bottom: 40px;
 	height: 500px;
 	&:hover {
@@ -173,6 +172,8 @@ $paddingsecciones: 50px 0;
 	text-align: center;
 	margin-bottom: 40px;
 	height: 500px;
+	margin-right: 20px;
+	margin-left: 20px;
 	&:hover {
 		transform: translateY(-15px);
 		box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
@@ -187,7 +188,6 @@ $paddingsecciones: 50px 0;
 	border-radius: 8px;
 	box-shadow: 0 2px 2px rgba (0, 0, 0, 0.2);
 	overflow: hidden;
-	margin-left: 20px;
 	text-align: center;
 	height: 500px;
 	&:hover {

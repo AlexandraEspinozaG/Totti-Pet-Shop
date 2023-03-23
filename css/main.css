@@ -272,7 +272,6 @@
   overflow: hidden;
   text-align: center;
   flex-direction: column;
-  margin-right: 20px;
   margin-bottom: 40px;
   height: 500px; }
   .producto1:hover {
@@ -289,7 +288,9 @@
   overflow: hidden;
   text-align: center;
   margin-bottom: 40px;
-  height: 500px; }
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 20px; }
   .producto2:hover {
     transform: translateY(-15px);
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2); }
@@ -302,7 +303,6 @@
   border-radius: 8px;
   box-shadow: 0 2px 2px rgba 0, 0, 0, 0.2;
   overflow: hidden;
-  margin-left: 20px;
   text-align: center;
   height: 500px; }
   .producto3:hover {
